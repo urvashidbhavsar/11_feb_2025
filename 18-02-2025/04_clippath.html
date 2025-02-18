@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+
+            /* 29% - circle size, 77%- circle movement X, 43% - circle movement Y */
+            /* clip-path: circle(29% at 77% 43%); */
+
+            /* clip-path: ellipse(40% 30% at 20% 45%); */
+
+            clip-path: polygon(0% 100%, 50% 0, 100% 100%);
+
+            /* for more : https://bennettfeely.com/clippy/ */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="">
+</body>
+
+</html>
