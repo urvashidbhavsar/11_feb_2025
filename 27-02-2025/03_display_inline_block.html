@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .list ul {
+            background-color: aqua;
+        }
+
+        .list ul li {
+            /* it cant effectedd on element height and width, only set element in a row */
+            display: inline;
+            padding: 20px;
+            background-color: saddlebrown;
+            height: 300px;
+        }
+
+        .list-1 ul {
+            background-color: salmon;
+        }
+
+        .list-1 ul li {
+            /* it can effected on element height and width, and set element in a row */
+            display: inline-block;
+            padding: 20px;
+            background-color: sandybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="list-1">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+
+</html>
