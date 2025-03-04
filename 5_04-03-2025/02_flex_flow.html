@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            border: 1px solid black;
+            display: flex;
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+
+            /* used to control overflow value when we apply flex */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .child {
+            font-size: 35px;
+            height: 100px;
+            width: 50%;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+
+</html>
