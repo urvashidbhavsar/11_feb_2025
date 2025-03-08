@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            display: grid;
+            /* short hand of justify-content and align-content */
+            /* place-content: end center; */
+
+            /* short hand of justify-items and align-items */
+            /* place-items: center start; */
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: rgb(7, 59, 59);
+
+            /* short hand of justify-self and align-self */
+            place-self: center end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

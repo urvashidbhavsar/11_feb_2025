@@ -1,0 +1,22 @@
+1. 
+==============================
+
+2. transform = how to show your element in other directions. 
+functions 
+1. rotate 
+    rotate(), rotateX(), rotateY(), rotateZ(), rotate3d()
+
+2. scale 
+    scale(), scaleX(), scaleY(), scaleZ(), scale3d()
+
+3. skew
+    skew(), skewX(), skewY()
+
+4. translate = movement
+    translate(), translateX(), translateY(),translateZ(), translate3d()
+
+5. perspective = view 
+
+6. matrix and matrix3d
+============================================== 
+3. animation 
