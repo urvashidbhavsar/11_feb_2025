@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: firebrick;
+            margin: 100px auto;
+
+            /* transition-duration: 1s;
+            transition-property: all;
+            transition-timing-function: ease;
+            transition-delay: 1s; */
+
+            /* transition: 1s all ease-in; */
+            /* transition: all 1s ease-out; */
+            /* transition: ease-in-out 1s; */
+            /* transition: 1s linear; */
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+        }
+
+        div:hover {
+            height: 200px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

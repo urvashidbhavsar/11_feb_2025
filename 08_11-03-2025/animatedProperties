@@ -1,5 +1,10 @@
-1. 
-==============================
+1. transition = use to set smooth movement of element 
+transition
+traisition-timing-function
+transition-duration
+transition-property
+transition-delay
+==============================================
 
 2. transform = how to show your element in other directions. 
 functions 
