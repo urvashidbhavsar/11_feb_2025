@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 600px;
+            display: grid;
+            place-content: center;
+        }
+
+        .setup {
+            height: 200px;
+            width: 200px;
+        }
+
+        .cube {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            transform: translateZ(-100px);
+            perspective: 400px;
+            perspective-origin: 40% 60%;
+            transform-style: preserve-3d;
+        }
+
+        .cubeslides {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            display: grid;
+            place-content: center;
+            font-size: 40px;
+        }
+
+        .front {
+            background-color: rgba(139, 69, 19, 0.7);
+            transform: rotate(0deg) translateZ(100px);
+        }
+
+        .back {
+            background-color: rgba(41, 139, 19, 0.7);
+            transform: rotate(0deg) translateZ(-100px);
+        }
+
+        .top {
+            background-color: rgba(19, 27, 139, 0.7);
+            transform: rotateX(-90deg) translateZ(-100px);
+        }
+
+        .bottom {
+            background-color: rgba(139, 19, 19, 0.7);
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+
+        .left {
+            background-color: rgba(139, 131, 19, 0.7);
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+
+        .right {
+            background-color: rgba(77, 33, 75, 0.7);
+            transform: rotateY(-90deg) translateZ(-100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setup">
+        <div class="cube">
+            <div class="cubeslides front">Front</div>
+            <div class="cubeslides back">Back</div>
+            <div class="cubeslides top">Top</div>
+            <div class="cubeslides bottom">Bottom</div>
+            <div class="cubeslides left">Left</div>
+            <div class="cubeslides right">Right</div>
+        </div>
+    </div>
+</body>
+
+</html>
