@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 600px;
+            display: grid;
+            place-content: center;
+        }
+
+        .setup {
+            position: relative;
+        }
+
+        .outer {
+            height: 200px;
+            width: 200px;
+            border-top: 10px solid black;
+            border-bottom: 10px solid black;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-radius: 50%;
+            animation: loading 2s linear infinite;
+        }
+
+        h1 {
+            position: absolute;
+            top: 88px;
+            left: 43px;
+        }
+
+        @keyframes loading {
+            0% {
+                transform: rotate(0);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="setup">
+        <div class="outer"></div>
+        <h1>Loading...</h1>
+    </div>
+</body>
+
+</html>

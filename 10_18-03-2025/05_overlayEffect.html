@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .overlay {
+            width: 500px;
+            margin: auto;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .over-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: brown;
+            display: grid;
+            place-content: center;
+            /* transform: scaleX(0);
+            transform-origin: right; */
+            /* transform: scaleY(0);
+            transform-origin: bottom; */
+            transform: scale(0);
+            transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .overlay:hover .over-text {
+            /* transform: scaleX(1); */
+            /* transform: scaleY(1); */
+            transform: scale(1);
+        }
+
+        h1 {
+            transform: scale(0);
+            transition: 1s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+        .overlay:hover h1 {
+            transform: scale(1);
+            transition-delay: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <img src="https://images.unsplash.com/photo-1529718836725-f449d3a52881?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29tYW4lMjBpbiUyMGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="">
+
+        <div class="over-text">
+            <h1><a href="">Read More</a></h1>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 15px 30px;
+            background-color: seagreen;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        button:hover {
+            animation: btnmove 1s ease infinite alternate;
+        }
+
+        button::after {
+            content: "";
+            position: absolute;
+            padding: 15px 30px;
+            background-color: #8080804d;
+            display: block;
+            left: 0px;
+            top: 47px;
+            right: 0;
+            border-radius: 50%;
+            transform: rotateX(80deg);
+        }
+
+        button:hover::after {
+            animation: shadow 1s ease infinite alternate;
+        }
+
+        @keyframes btnmove {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes shadow {
+            0% {
+                transform: rotateX(80deg) scale(1.2);
+            }
+
+            100% {
+                transform: rotateX(80deg) scale(0.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click Here</button>
+</body>
+
+</html>
