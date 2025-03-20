@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: transparent;
+            color: slateblue;
+            padding: 15px 30px;
+            border: 2px solid slateblue;
+            font-size: 16px;
+            transition: .5s ease;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+        }
+
+        button:hover {
+            color: white;
+        }
+
+        button::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: slateblue;
+            z-index: -1;
+            transform: scale(0);
+            transform-origin: left top;
+            transition: .5s ease;
+        }
+
+        button:hover::after {
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click Here</button>
+</body>
+
+</html>
