@@ -1,0 +1,9 @@
+mobile screen, tablet, mini laptop, medium and large screens
+
+max-width:576px
+----- breakpoint -----
+min-width:576px 
+min-width:768px
+min-width:992px
+min-width:1200px == 1140px 
+min-width:1400px == 1320px 

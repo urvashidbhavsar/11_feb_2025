@@ -1,0 +1,58 @@
+/* max value cant inherit */
+@media (max-width:576px) {
+    .boxlayout {
+        width: 100%;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+}
+
+/* ================================================================= */
+/* min value inherit */
+@media (min-width:576px) {
+    .boxlayout {
+        max-width: 540px;
+    }
+
+    header .navbar .nav {
+        display: none;
+    }
+}
+
+/* ================================================================= */
+@media (min-width:768px) {
+    .boxlayout {
+        max-width: 720px;
+    }
+}
+
+/* ================================================================= */
+@media (min-width:992px) {
+    .boxlayout {
+        max-width: 960px;
+    }
+}
+
+/* ================================================================= */
+@media (min-width:1200px) {
+    .boxlayout {
+        max-width: 1140px;
+    }
+
+    header .navbar .menus {
+        display: none;
+    }
+
+    header .navbar .nav {
+        display: flex;
+    }
+}
+
+/* ================================================================= */
+@media (min-width:1400px) {
+    .boxlayout {
+        max-width: 1320px;
+    }
+}
