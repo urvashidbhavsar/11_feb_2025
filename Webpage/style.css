@@ -12,6 +12,10 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: rgb(198, 195, 195);
 }
@@ -21,6 +25,12 @@ header {
     padding: 0 10px;
 }
 
+/* ===================== var() cal() function ======= */
+:root {
+    --font1: calc(3vw + 20px);
+}
+
+/* ============================================== */
 header .navbar {
     display: flex;
     justify-content: space-between;
@@ -62,4 +72,116 @@ header .navbar .menus button {
     font-size: 20px;
     border: 2px solid black;
     background-color: transparent;
+}
+
+/* ============================================= */
+.topheader {
+    background-color: #070727;
+}
+
+.topheader a {
+    color: white;
+}
+
+.topheader .topnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.topheader .topnavbar .contact,
+.social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topheader .topnavbar .contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topheader .topnavbar .contact i {
+    color: teal;
+}
+
+/* =================================================== */
+.home-content {
+    background: url(https://preview.colorlib.com/theme/roberto/img/bg-img/16.jpg.webp);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    background-blend-mode: multiply;
+}
+
+.home-content {
+    text-align: center;
+    color: white;
+    /* line-height: 3; */
+}
+
+.home-content h1 {
+    font-size: var(--font1);
+    padding: 20px 0;
+}
+
+.home-content p {
+    text-transform: uppercase;
+}
+
+.home-content button {
+    padding: 15px 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid teal;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.homepage {
+    position: relative;
+}
+
+.homepage .hotelform {
+    position: absolute;
+    padding: 30px;
+    box-shadow: 0 0 5px black;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+    bottom: -41px;
+    background: white;
+    width: 85%;
+    align-items: center;
+}
+
+.homepage .fields {
+    display: flex;
+    gap: 10px;
+}
+
+.homepage .fields input[type="date"] {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bcbcbc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.homepage .fields label,
+.label {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.homepage .fields select {
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #bcbcbc;
+    border-radius: 3px;
 }

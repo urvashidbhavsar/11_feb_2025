@@ -7,6 +7,15 @@
     header .navbar .nav {
         display: none;
     }
+
+    .topheader .topnavbar .contact a {
+        display: none;
+    }
+
+    .home-content {
+        padding: 60px 0;
+    }
+
 }
 
 /* ================================================================= */
@@ -17,6 +26,10 @@
     }
 
     header .navbar .nav {
+        display: none;
+    }
+
+    .topheader .topnavbar .contact a {
         display: none;
     }
 }
@@ -32,6 +45,10 @@
 @media (min-width:992px) {
     .boxlayout {
         max-width: 960px;
+    }
+
+    .topheader .topnavbar .contact a {
+        display: block;
     }
 }
 
