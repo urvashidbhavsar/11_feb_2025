@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sub = "JavaScript";
+
+        // before ES6
+        document.writeln("<p>I am learn " + sub + "</p>")
+
+        // after ES6
+        document.writeln(`<p>I am learn ${sub} </p>`)
+
+        let a = 10, b = 10;
+        document.writeln(a + b)
+        document.writeln("<br>Addition : " + (a + b))
+        document.writeln(`<br>Addition : ${a + b} <br>`)
+
+        // increment and decrement
+        let c = 1;
+        // post increment
+        document.writeln(c++) // print than increment
+        document.writeln(c)
+        document.writeln(++c) // increment than print
+        c++;
+        document.writeln(c)
+
+    </script>
+</body>
+
+</html>

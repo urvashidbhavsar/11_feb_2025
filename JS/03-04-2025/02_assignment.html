@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 10, b = 15;
+
+        // a = a + b
+        a += b
+        document.writeln(a) // 25
+
+        // a = a - b
+        a -= b
+        document.writeln(a)
+
+        // comparision always gives result in boolean value
+        let x = 5, y = 15, res;
+        // in comparision or logical output always shows on the basis of first operand.. 2nd always use for compare.
+        res = (x < y)
+        console.log("x<y : " + res)
+        res = (x <= y)
+        console.log("x<=y : " + res)
+        res = (x > y)
+        console.log("x>y : " + res)
+        res = (x >= y)
+        console.log("x>=y : " + res)
+
+        x = 5, y = "5"
+
+        res = (x == y)
+        console.log("x==y : " + res)
+        res = (x != y)
+        console.log("x!=y : " + res)
+
+        res = (x === y)
+        console.log("x===y : " + res)
+        res = (x !== y)
+        console.log("x!==y : " + res)
+    </script>
+</body>
+
+</html>
