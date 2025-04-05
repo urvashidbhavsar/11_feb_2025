@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // citizen able to votting or not.
+        let age = 17;
+        if (age >= 18) {
+            document.writeln("<p>citizen are able for votting</p>")
+        } else {
+            document.writeln("<p>citizen are not able for votting</p>")
+        }
+
+        // print max number. assume 2 numbers
+        let a = 34, b = 34;
+        if (a > b) {
+            document.writeln(`<p>${a} is max</p>`)
+        } else if (b > a) {
+            document.writeln(`<p>${b} is max</p>`)
+        } else {
+            document.writeln(`<p>${a} and ${b} are same</p>`)
+        }
+
+        // min number. assume 3 numbers.
+        a = 2, b = 11;
+        let c = 1;
+        if (a < b && a < c) {
+            document.writeln(`${a} is min`)
+        } else if (b < a && b < c) {
+            document.writeln(`${b} is min`)
+        } else if (c < a && c < b) {
+            document.writeln(`${c} is min`)
+        } else {
+            document.writeln(`<p>${a},${b} and ${c} are same</p>`)
+        }
+
+    </script>
+</body>
+
+</html>
