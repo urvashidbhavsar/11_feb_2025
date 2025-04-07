@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- function means block of code which is make for reusable code -->
+    <!-- 1. create a function without parameter / argument  -->
+    <!-- 2. create a function with parameter / argument  -->
+
+    <script>
+        function message() {
+            document.writeln(`<div>Welcome to learn js</div>`)
+        }
+        // call a function
+        message()
+        message()
+        message()
+
+        // with parameter
+        function subject(no, subj) {
+            document.writeln(`<div>${no} => ${subj}</div>`)
+        } 
+        subject(1, "JavaScript")
+        subject(2, "Java")
+        subject(3, "php")
+    </script>
+</body>
+
+</html>
