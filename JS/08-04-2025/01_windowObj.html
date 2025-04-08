@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="show()">alert</button>
+    <button onclick="confirmation()">confirm</button>
+    <button onclick="promptbox()">Prompt</button>
+
+    <script>
+        function show() {
+            alert("Welcome")
+        }
+
+        function confirmation() {
+            let link = "https://www.scientecheasy.com/wp-content/uploads/2024/05/html-webpage-layout.png", closelink;
+
+            if (confirm("click on ok for open link")) {
+                closelink = window.open(link)
+                console.log(closelink)
+            } else {
+                // window.close() => self close 
+                closelink.window.close()
+            }
+        }
+
+        function promptbox() {
+            let inp = prompt("Enter name: ")
+            if (inp == "") {
+                alert("Enter name please")
+            } else {
+                document.writeln(inp)
+            }
+        }
+    </script>
+</body>
+
+</html>
