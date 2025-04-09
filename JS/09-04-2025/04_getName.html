@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" name="gen" id=""> Male
+    <input type="radio" name="gen" id=""> Female
+    <br><br>
+
+    <input type="text" name="myinp" id="" readonly>
+    <script>
+        let sel = document.getElementsByName("gen")
+        sel[0].checked = true
+
+        let inp = document.getElementsByName("myinp")
+        inp[0].value = "Welcome"
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- class selection, attribute selection, element selection, descendent selection, child selection, ajducent, siblings, group selection -->
+
+    <div class="parent">
+        <div class="child">Hello world</div>
+        <div class="child">Hello world</div>
+    </div>
+    <div class="parent-1">
+        <div class="child">Hello world</div>
+    </div>
+
+    <script>
+        // child selection
+        // let txt = document.querySelectorAll(".parent > .child")
+        // descendent
+        let txt = document.querySelectorAll(".parent .child")
+        for (let i = 0; i < txt.length; i++) {
+            txt[i].style.color = "red"
+        }
+    </script>
+
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+
+    <script>
+        let word = document.querySelectorAll("h1,h2,h3")
+        for (let i = 0; i < word.length; i++) {
+            word[i].innerHTML = "Group Selection"
+            word[i].style.color = "red"
+        }
+    </script>
+</body>
+
+</html>
