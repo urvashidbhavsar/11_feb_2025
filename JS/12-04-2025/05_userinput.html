@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #err {
+            color: red;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <input type="text" name="" id="inp" placeholder="Enter any value">
+        <span id="err"></span>
+
+        <br><br>
+        <button onclick="return userinput()">submit</button>
+        <p id="p1"></p>
+    </form>
+
+    <script>
+        function userinput() {
+            let user = document.getElementById("inp");
+            if (user.value == "") {
+                // alert("Enter value")
+                document.getElementById("err").innerHTML = "Enter value!!!!"
+                user.style.borderColor = "red"
+            } else {
+                document.getElementById("p1").innerHTML = user.value;
+                document.getElementById("err").innerHTML = ""
+                user.value = ""
+                user.style.borderColor = "gray"
+            }
+            return false
+        }
+    </script>
+</body>
+
+</html>

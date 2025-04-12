@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            width: 300px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        /* create a class for add css using js */
+        .setpara {
+            background-color: saddlebrown;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="setmydiv()">click</button>
+
+    <p class="para" id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatum dolore magnam, sequi doloremque
+        quibusdam a consequatur impedit provident, officia dolorum ad iste numquam amet nostrum ratione totam facilis
+        eos.
+    </p>
+
+    <script>
+        function setmydiv() {
+            // let p = document.querySelector(".para")
+            // let p = document.getElementsByClassName("para")[0]
+            // p.className = "para setpara"
+            let p = document.getElementById("para")
+            if (p.className == "para") {
+                p.className = "setpara"
+            } else {
+                p.className = "para"
+            }
+        }
+    </script>
+</body>
+
+</html>

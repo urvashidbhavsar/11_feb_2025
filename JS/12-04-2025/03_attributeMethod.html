@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .setimg {
+            width: 500px;
+            border: 15px groove gray;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addattr()">set</button>
+    <button onclick="deleteattr()">remove</button>
+    <button onclick="getattr()">get</button>
+    <hr>
+
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="" id="myimg" width="800px">
+    <p>
+        <b>Image Source</b> : <span id="res"></span>
+    </p>
+
+    <script>
+        function addattr() {
+            let img = document.getElementById("myimg")
+            // img.setAttribute("width", "500px")
+            // img.setAttribute("style", "border:5px groove gray")
+            img.setAttribute("class", "setimg")
+        }
+        function deleteattr() {
+            let img = document.getElementById("myimg")
+            img.removeAttribute("class")
+        }
+        function getattr() {
+            let img = document.getElementById("myimg")
+            let src = img.getAttribute("src")
+            document.getElementById("res").innerHTML = src
+        }
+    </script>
+</body>
+
+</html>
