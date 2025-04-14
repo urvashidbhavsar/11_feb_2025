@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">click</button>
+
+    <script>
+        // used to stop the event which is multiple time invoke
+        function message() {
+            alert("Event Fired... !!!")
+            btn1.removeEventListener("click", message)
+            btn1.setAttribute("disabled", "true")
+        }
+
+        let btn1 = document.getElementById("btn1")
+        btn1.addEventListener("click", message)
+    </script>
+</body>
+
+</html>

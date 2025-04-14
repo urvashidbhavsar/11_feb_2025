@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+
+    <script>
+        // let time = setInterval(() => {
+        //     alert("setInterval method invoke")
+        //     clearInterval(time)
+        // }, 3000);
+
+        let d1 = document.getElementById("div1")
+        let start = 100
+        let count = setInterval(() => {
+            d1.innerHTML = ++start;
+            if (start == 500) {
+                clearInterval(count)
+            }
+        }, 500)
+    </script>
+</body>
+
+</html>

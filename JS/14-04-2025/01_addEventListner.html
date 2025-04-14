@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="msg()">click</button>
+    <button id="btn1">click here</button>
+    <button id="btn2">click on button</button>
+    <p id="inp"></p>
+
+    <script>
+        function msg() {
+            alert("Welcome")
+        }
+
+        // call a button and given target directly
+        let b1 = document.getElementById("btn1")
+        b1.addEventListener("click", function () {
+            alert("addEventlistner method invoke")
+        })
+
+        // resuable function
+        let b2 = document.getElementById("btn2")
+        b2.addEventListener("click", msg)
+
+        window.addEventListener("load", function () {
+            let input = prompt("Enter your number")
+            if (input == "") {
+                alert("first, Enter number ")
+            } else {
+                document.getElementById("inp").innerHTML = input;
+            }
+        })
+    </script>
+</body>
+
+</html>

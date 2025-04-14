@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let dt = new Date();
+
+        document.writeln(`<p> ${dt} </p>`)
+
+        document.writeln(`<p> ${dt.getDate()}/${dt.getMonth() + 1}/${dt.getFullYear()} </p>`)
+
+        document.writeln(`<p> ${dt.getHours()}:${dt.getMinutes()}:${dt.getSeconds()}:${dt.getMilliseconds()} </p>`)
+
+        document.writeln(`<p>Day : ${dt.getDay()} </p>`)
+        let day = dt.getDay();
+        switch (day) {
+            case 1:
+                document.writeln(`<p>Day : Monday</p>`)
+        }
+
+        document.writeln(`<p>${dt.toDateString()}</p>`)
+        document.writeln(`<p>${dt.toLocaleDateString()}</p>`)
+        document.writeln(`<p>${dt.toTimeString()}</p>`)
+        document.writeln(`<p>${dt.toLocaleTimeString()}</p>`)
+
+    </script>
+</body>
+
+</html>
