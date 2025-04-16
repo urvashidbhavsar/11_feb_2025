@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // array create 
+        let colors = ["white", "red", "blue", "pink", "black"]
+        console.log(colors)
+
+        // access array manually
+        console.log(colors[0]);
+        console.log(colors[1]);
+        console.log(colors[2]);
+
+        // push, pop, shift, unshift
+        colors.push("yellow", "green")
+
+        // for loop
+        console.log("===== for loop =====")
+        for (let i = 0; i < colors.length; i++) {
+            console.log(`${i + 1}=> ${colors[i]}`)
+        }
+
+        colors.pop()
+        console.log(colors)
+        colors.unshift("green")
+
+        // for of loop
+        console.log("===== for of loop =====")
+        for (const clr of colors) {
+            console.log(clr)
+        }
+
+        let clr = colors.keys()
+        for (const c of clr) {
+            console.log(`${c} => ${colors[c]}`)
+        }
+
+        colors.shift()
+
+        // foreach method of array // loop
+        console.log("===== for each loop =====")
+        colors.forEach((clr, i) => {
+            console.log(`${i} => ${clr}`)
+        })
+
+    </script>
+</body>
+
+</html>

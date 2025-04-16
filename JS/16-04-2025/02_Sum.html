@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="n1" placeholder="Number 1" onkeyup="addition()">
+    <input type="text" name="" id="n2" placeholder="Number 2" onkeyup="addition()">
+
+    <p id="result"></p>
+
+    <script>
+        // let num1 = Number(document.getElementById("n1").value);
+        // let num2 = Number(document.getElementById("n2").value);
+        function addition() {
+            let num1 = document.getElementById("n1");
+            let num2 = document.getElementById("n2");
+
+            let res = Number(num1.value) + Number(num2.value)
+            document.getElementById("result").innerHTML = res
+
+            return false
+        }
+    </script>
+</body>
+
+</html>
