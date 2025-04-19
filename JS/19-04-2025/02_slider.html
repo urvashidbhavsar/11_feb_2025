@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sliders {
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            animation: fade 0.5s ease;
+        }
+
+        .controls {
+            position: absolute;
+            top: 250px;
+            z-index: 1;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            height: 50px;
+            width: 50px;
+            background: black;
+            color: white;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:active {
+            scale: 0.9;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sliders">
+        <div class="slide">
+            <img src="../../../images/img.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="../../../images/img2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="../../../images/img3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="../../../images/img4.jpg" alt="">
+        </div>
+
+        <div class="controls">
+            <button onclick="call(-1)">&lt;</button>
+            <button onclick="call(1)">&gt;</button>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        slideshow(index)
+        // click event
+        function call(x) {
+            slideshow(index += x)
+        }
+
+        setInterval(() => {
+            call(1)
+        }, 3000)
+
+        // page load
+        function slideshow(n) {
+            let slide = document.querySelectorAll(".slide");
+
+            // left
+            if (n < 0) {
+                index = slide.length - 1
+            }
+
+            // right
+            if (n == slide.length) {
+                index = 0
+            }
+
+            slide.forEach(image =>
+                image.style.display = "none"
+            )
+            slide[index].style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

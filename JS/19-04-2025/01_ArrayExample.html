@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            background-color: salmon;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 23px;
+        }
+
+        .imageGallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul id="navlist"></ul>
+    </div>
+
+    <div class="imageGallery"></div>
+
+    <script>
+        let nav = ["Home", "About", "Service", "Contact", "Blog"]
+        let list = document.getElementById("navlist")
+        nav.forEach(item => {
+            console.log(item)
+            list.innerHTML += `
+             <li><a href="">${item}</a></li>
+            `
+        })
+
+        let img_coll = [
+            "../../../images/img.jpg", "../../../images/img2.jpg",
+            "../../../images/img3.jpg", "../../../images/img4.jpg",
+            "../../../images/img5.jpg", "../../../images/img6.webp",
+            "../../../images/a1.jpg"
+        ]
+        let gellery = document.querySelector(".imageGallery");
+        for (let i = 0; i < img_coll.length; i++) {
+            gellery.innerHTML += `
+            <div>
+                <img src=${img_coll[i]} alt="">
+            </div> `
+        }
+
+    </script>
+</body>
+
+</html>
