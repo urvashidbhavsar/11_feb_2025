@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let furniture = {
+            type: "table",
+            price: 500,
+            color: "black",
+            size: "medium"
+        }
+        console.log(furniture)
+        document.writeln(furniture)
+
+        // access property from object manually
+        console.log(furniture.color)
+        console.log(furniture.type)
+
+        // use loop for access object
+        for (const fur in furniture) {
+            if (Object.prototype.hasOwnProperty.call(furniture, fur)) {
+                console.log(fur + "=>" + furniture[fur])
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #product_card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 50px;
+            gap: 30px;
+        }
+
+        .card {
+            border: 1px solid gray;
+
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .pro-details {
+            padding: 20px;
+        }
+
+        p,
+        div {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="product_card"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script>
+        let student = [
+            {
+                id: 1,
+                name: "Pratham",
+            },
+            {
+                id: 2,
+                name: "Manan",
+            }
+        ]
+
+        let tbody = document.getElementById("data");
+        for (let i = 0; i < student.length; i++) {
+            tbody.innerHTML += `
+            <tr>
+                <td>${student[i].id}</td>
+                <td>${student[i].name}</td >
+            </tr> `
+        }
+    </script>
+</body>
+
+</html>
