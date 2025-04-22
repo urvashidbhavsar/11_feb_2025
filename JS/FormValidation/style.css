@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    width: 50%;
+    border: 1px solid gray;
+    padding: 40px;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+input[type="text"],
+select {
+    height: 40px;
+    width: 350px;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.field {
+    margin: 5px 0;
+}
+
+.err {
+    color: red;
+}
+
+button {
+    padding: 5px 10px;
+}

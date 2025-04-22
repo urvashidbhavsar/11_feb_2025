@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let str = "Hello World", ptn = /^[a-z\s]*$/i
+        if (ptn.test(str)) {
+            console.log("match")
+        } else {
+            console.log("not match")
+        }
+
+        // match method is string method. if cant work/effect with number.
+        if (str.match(ptn)) {
+            console.log("match")
+        } else {
+            console.log("not match")
+        }
+
+        let num = 9876543210, ptn2 = /^[0-9]*$/
+        if (ptn2.test(num)) {
+            console.log("Number match")
+        } else {
+            console.log("Number not match")
+        }
+
+        if (num.toString().match(ptn2)) {
+            console.log("Number match")
+        } else {
+            console.log("Number not match")
+        }
+
+    </script>
+</body>
+
+</html>
