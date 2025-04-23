@@ -9,44 +9,56 @@
 </head>
 
 <body>
-    <form action="#">
+    <form action="#" onsubmit="return checkValidate()">
         <div class="field">
-            <input type="text" name="" id="" placeholder="Firstname">
+            <input type="text" name="" id="fname" class="myinp" placeholder="Firstname"
+                onblur="return checknull(this,'err1')" onkeyup="return checkNamePtn(this,'err1')"
+                oninput="allowed(this)">
             <span class="err" id="err1"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Lastname">
+            <input type="text" name="" id="lname" class="myinp" placeholder="Lastname"
+                onblur="return checknull(this,'err2')" onkeyup="return checkNamePtn(this,'err2')"
+                oninput="allowed(this)">
             <span class="err" id="err2"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Enter Mobile No">
+            <input type="text" name="" id="" placeholder="Enter Mobile No" onblur="return checknull(this,'err3')">
             <span class="err" id="err3"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Email">
+            <input type="text" name="" id="" placeholder="Email" onblur="return checknull(this,'err4')">
             <span class="err" id="err4"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Password">
+            <input type="text" name="" id="" placeholder="Password" onblur="return checknull(this,'err5')">
             <span class="err" id="err5"></span>
         </div>
         <div class="field">
-            <select name="" id="">
-                <option value="">--- select city ---</option>
+            <input type="text" name="" id="" placeholder="Re-Password" onblur="return checknull(this,'err6')">
+            <span class="err" id="err6"></span>
+        </div>
+        <div class="field">
+            <select name="" id="" onblur="return checkselection(this, 'err7')">
+                <option value="-1">--- select city ---</option>
                 <option value="">Surat</option>
                 <option value="">Baroda</option>
             </select>
+            <span class="err" id="err7"></span>
         </div>
         <div class="field">
-            <input type="radio" name="gen" id="">
+            <input type="radio" name="gen" id="" onblur="return checkedvalue(this,'err8')">
             <label for="">Male</label>
-            <input type="radio" name="gen" id="">
+            <input type="radio" name="gen" id="" onblur="return checkedvalue(this,'err8')">
             <label for="">Female</label>
+            <span id="err8" class="err"></span>
         </div>
         <div class="field">
-            <button>Click</button>
+            <button type="submit">Click</button>
         </div>
     </form>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
