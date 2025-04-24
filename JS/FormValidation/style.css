@@ -16,6 +16,7 @@ form {
 }
 
 input[type="text"],
+[type="password"],
 select {
     height: 40px;
     width: 350px;

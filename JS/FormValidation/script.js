@@ -61,3 +61,69 @@ allinp.forEach(item => {
         item.value = item.value.toUpperCase()
     })
 })
+// ------------------------------------------------- 
+function checkNumber(input, error, len) {
+    let num = /^[6-9][0-9]*$/
+    if (!num.test(input.value)) {
+        document.getElementById(error).innerHTML = "Invalid Value!!!!"
+        input.style.borderColor = "red"
+    } else if (input.value.length < len) {
+        document.getElementById(error).innerHTML = "Enter 10 Digits"
+        input.style.borderColor = "red"
+    } else {
+        document.getElementById(error).innerHTML = ""
+        input.style.borderColor = "black"
+    }
+    return false;
+}
+
+function emailvalidate(input, error) {
+    // let eptn = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    let eptn = /^[a-z0-9\.$#&_]*@[a-z]*(\.\w{2,3})+$/i
+    if (eptn.test(input.value)) {
+        document.getElementById(error).innerHTML = ""
+        input.style.borderColor = "black"
+    } else {
+        document.getElementById(error).innerHTML = "Invalid Email!!!"
+        input.style.borderColor = "red"
+    }
+    return false
+}
+
+function passwordValidate(input, error) {
+    let pptn = /^[A-Z][a-z0-9]*[\.#@$%&][a-z0-9]*$/
+    if (pptn.test(input.value)) {
+        document.getElementById(error).innerHTML = ""
+        input.style.borderColor = "black"
+    } else {
+        document.getElementById(error).innerHTML = "Password has one uppercase and others are lowercase, special letters(.$%#&@) and digits. first letter must be Capital."
+        input.style.borderColor = "red"
+    }
+    return false
+}
+
+function ComparePass(pass, cpass, error) {
+    let pwd = document.getElementById(pass)
+    if (cpass.value != pwd.value) {
+        document.getElementById(error).innerHTML = "Password Not Match"
+        cpass.style.borderColor = "red"
+    } else {
+        document.getElementById(error).innerHTML = ""
+        cpass.style.borderColor = "black"
+    }
+    return false
+}
+
+function Showpass(pass, cpass) {
+    let pwd = document.getElementById(pass)
+    let cpwd = document.getElementById(cpass)
+    if (pwd.type == "password" && cpwd.type == "password") {
+        pwd.type = "text"
+        cpwd.type = "text"
+    } else {
+        pwd.type = "password"
+        cpwd.type = "password"
+    }
+    return false
+}
+

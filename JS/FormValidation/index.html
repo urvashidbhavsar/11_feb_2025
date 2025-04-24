@@ -23,19 +23,23 @@
             <span class="err" id="err2"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Enter Mobile No" onblur="return checknull(this,'err3')">
+            <input type="text" name="" id="" placeholder="Enter Mobile No" onblur="return checknull(this,'err3')"
+                onkeyup="return checkNumber(this,'err3',10)" maxlength="10">
             <span class="err" id="err3"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Email" onblur="return checknull(this,'err4')">
+            <input type="text" name="" id="" placeholder="Email" onblur="return checknull(this,'err4')"
+                onkeyup="return emailvalidate(this,'err4')">
             <span class="err" id="err4"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Password" onblur="return checknull(this,'err5')">
+            <input type="password" name="" id="pwd" placeholder="Password" onblur="return checknull(this,'err5')"
+                onkeyup="return passwordValidate(this,'err5')">
             <span class="err" id="err5"></span>
         </div>
         <div class="field">
-            <input type="text" name="" id="" placeholder="Re-Password" onblur="return checknull(this,'err6')">
+            <input type="password" name="" id="cpwd" placeholder="Re-Password" onblur="return checknull(this,'err6')"
+                onkeyup="return ComparePass('pwd', this, 'err6')">
             <span class="err" id="err6"></span>
         </div>
         <div class="field">
@@ -52,6 +56,9 @@
             <input type="radio" name="gen" id="" onblur="return checkedvalue(this,'err8')">
             <label for="">Female</label>
             <span id="err8" class="err"></span>
+        </div>
+        <div class="field">
+            <input type="checkbox" onclick="Showpass('pwd','cpwd')"> Show Password
         </div>
         <div class="field">
             <button type="submit">Click</button>
