@@ -1,0 +1,52 @@
+property         classes (values-0 to 5)
+1. margin           m-*
+2. margin-left      ms-*
+3. margin-right     me-*
+4. margin-top       mt-*
+5. margin-bottom    mb-*
+6. margin-vertically  my-*
+7. margin-horizontal  mx-*
+
+property         classes (values-0 to 5)
+1. padding           p-*
+2. padding-left      ps-*
+3. padding-right     pe-*
+4. padding-top       pt-*
+5. padding-bottom    pb-*
+6. padding-vertically  py-*
+7. padding-horizontal  px-*
+
+colors - 
+text-*      bg-*      border-*
+primary, secondary, light, dark, success, warning, info, danger 
+= light shade only with bg-* and border-*
+primary-subtle
+= dark shade for text 
+primary-emphasis
+
+border : 1px solid black 
+border-* (0 to 5)
+border | border-start | border-end | border-top | border-bottom 
+border-colorname 
+
+height : h-25, h-50, h-75, h-100, h-auto 
+width : w-25, w-50, w-75, w-100, w-auto 
+max-width : mw-100
+max-height : mh-100
+
+border-radius : 
+- rounded-* (0 to 5)
+- rounded-circle
+- rounded-pill 
+
+alignment 
+- text-center, text-start, text-end 
+
+transform
+-text-uppercase, text-lowercase, text-capitalize 
+
+display 
+d-flex, d-grid, d-inline, d-block, d-none 
+
+
+
