@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <style>
+        body {
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background: conic-gradient(#4b0082, #9c62c4, #4b0082);
+        }
+
+        :focus {
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loginpage w-100 shadow p-4 mx-auto bg-white">
+        <h2 class="text-center">Login</h2>
+        <div class="row g-3">
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="email" class="form-control border-0 border-start border-2 border-success rounded-0"
+                        id="email" placeholder="">
+                    <label for="email">Email address</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="password" class="form-control border-0 border-start border-2 border-success rounded-0"
+                        id="pass" placeholder="">
+                    <label for="pass">Password</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-success w-100">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

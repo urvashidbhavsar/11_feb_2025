@@ -49,4 +49,31 @@ display
 d-flex, d-grid, d-inline, d-block, d-none 
 
 
+===========================================
+1. input type = text, password, date, datetime-local, number, time, month, search, etc
+2. textarea 
+=> class - form-control
 
+3. select-option
+=> form-select 
+
+4. label
+=> form-label
+
+5. input = radio, checkbox
+=> form-check-input 
+=> label = form-check-label 
+=> vertical => form-check
+=> horizontal => form-check-inline
+
+6. input-color 
+=> form-control-color 
+=> form-control
+
+7. input-range 
+=> form-range
+
+8. input-group
+=> group = button, label, dropdown, radio, checkbox
+=> parent = input-group
+=> child = input-group-text
